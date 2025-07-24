@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting…</title>
+  <title>Bio-Link Redirect Shim</title>
   <style>
     body {
       font-family: sans-serif;
@@ -10,7 +10,7 @@
       margin: 4rem 1rem;
       color: #333;
     }
-    code {
+    code, pre {
       display: inline-block;
       background: #f4f4f4;
       padding: 0.2rem 0.4rem;
@@ -39,5 +39,13 @@
       window.location.replace(`https://instagram.com/${username}`);
     }
   </script>
+
+  <noscript>
+    <div style="font-family:sans-serif;text-align:center;margin:4rem 1rem;color:#333">
+      <h1>Bio-Link Redirect Shim</h1>
+      <p>JavaScript is disabled. To visit your Instagram profile, replace <em>username</em> below with your handle and click:</p>
+      <pre><a href="https://instagram.com/username">https://instagram.com/username</a></pre>
+    </div>
+  </noscript>
 </body>
 </html>
