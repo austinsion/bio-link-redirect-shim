@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting…</title>
+  <script>
+    // Grab everything after the leading slash
+    const username = window.location.pathname.slice(1);
+
+    if (!username) {
+      // No username: show landing instructions
+      document.body.innerHTML = `
+        <h1>Bio-Link Redirect Shim</h1>
+        <p>Append your Instagram username to this URL:</p>
+        <code>https://bio-link-redirect-shim.pages.dev/yourUsername</code>
+      `;
+    } else {
+      // Redirect instantly to Instagram
+      window.location.replace(`https://instagram.com/${username}`);
+    }
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 4rem 1rem;
+      color: #333;
+    }
+    code {
+      display: inline-block;
+      background: #f4f4f4;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      margin-top: 0.5rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body></body>
+</html>
