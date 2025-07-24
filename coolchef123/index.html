@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>coolchef123 · Instagram Redirect</title>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://instagram.com/coolchef123" />
+  </noscript>
+</head>
+<body>
+  <script>
+    const username = 'coolchef123'
+    const instaURL = `https://instagram.com/${username}`
+    window.location.replace(instaURL)
+    document.body.innerHTML = `
+      <div style="font-family:sans-serif; margin-top:2em; text-align:center;">
+        <p>JavaScript is disabled. Tap below to visit:</p>
+        <a href="${instaURL}">${instaURL}</a>
+      </div>
+    `
+  </script>
+</body>
+</html>
