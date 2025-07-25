@@ -1,6 +1,10 @@
 [build]
   publish = "public"
-  command = "npm run generate:handles"
+
+[[redirects]]
+  from   = "/handles.json"
+  to     = "/handles.json"
+  status = 200
 
 [[redirects]]
   from   = "/*"
